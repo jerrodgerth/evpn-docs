@@ -13,8 +13,8 @@ nav:
   - Data Planes: evpn-dataplanes.md
   - L2 Service: evpn-l2service.md
   - L3 Service: evpn-l3service.md
-  - Symmetric Routing: evpn-l3symmetric.md
-  - Asymmetric Routing: evpn-l3asymmetric.md
+  - Symmetric Routing: evpn-l3-symmetric.md
+  - Asymmetric Routing: evpn-l3-asymmetric.md
   - Use Cases: evpn-usecases.md
   - Topic List: evpn-topics.md
 
