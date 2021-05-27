@@ -1,0 +1,113 @@
+# project information
+site_name: evpn docs
+site_url: https://jerrodgerth.github.io/evpn-docs/
+site_author: Jerrod Gerth
+site_description: >-
+  Draft of EVPN Docs
+
+# page tree
+nav:
+  - Intro: evpn-intro.md
+  - Overview: evpn-overview.md
+  - Benefits: evpn-benefits.md
+  - Data Planes: evpn-dataplanes.md
+  - L2 Service: evpn-l2service.md
+  - L3 Service: evpn-l3service.md
+  - Symmetric Routing: evpn-l3symmetric.md
+  - Asymmetric Routing: evpn-l3asymmetric.md
+  - Use Cases: evpn-usecases.md
+  - Topic List: evpn-topics.md
+
+# Repository
+repo_name: jerrodgerth/evpn-docs
+repo_url: https://github.com/jerrodgerth/evpn-docs
+edit_uri: "edit/master/docs/"
+
+# configuration
+theme:
+  name: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - navigation.top
+    - navigation.instant
+    # - navigation.sections
+    # - navigation.tabs
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jerrodgerth
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: "#"
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
