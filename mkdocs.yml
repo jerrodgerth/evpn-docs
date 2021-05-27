@@ -7,7 +7,7 @@ site_description: >-
 
 # page tree
 nav:
-  - Intro: evpn-intro.md
+  - Intro: index.md
   - Overview: evpn-overview.md
   - Benefits: evpn-benefits.md
   - Data Planes: evpn-dataplanes.md
@@ -60,7 +60,7 @@ theme:
     code: Roboto Mono
   favicon: assets/favicon.png
   icon:
-    logo: logo
+    repo: fontawesome/brands/github
 
 # Plugins
 plugins:
