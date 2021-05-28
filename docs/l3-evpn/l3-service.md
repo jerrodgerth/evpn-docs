@@ -21,13 +21,15 @@ The asymmetric IRB mode is required in SRLinux, since it is considered a basic m
 As for the symmetric IRB model, the “Host routing model using RT2s” uses RT2s with an L2 _and_ an L3 VNI, so that the IP address conveyed in the route is installed in the ip-vrf route-table as a host route, associated to the L3 VNI. This model is NOT REQUIRED in SRLinux.
 The Prefix routing model is REQUIRED in SRLinux. The following table summarizes the models and requirements.
 
-Table – EVPN L3 Models
-Model 	Value	Industry Support	SR Linux Support 
-Asymmetric	Basic IRB forwarding	All vendors	Yes
-Symmetric	Host Routing with RT2s	The same RT2 is used to populate FDB, ARP, and route-table (as opposed to RT2 for FDB/ARP, and RT5 for route-table) 	Cisco only	No
-	Prefix Routing with RT5s	Interface Less (IFL)	Uses RT5 in a similar way to IPVPN routes	All vendors	Yes
-		Interface-Full (IFF) - numbered	Uses RT5 with recursive resolution to RT2	SROS, Juniper MX	Yes
-		Interface-Full (IFF) - unnumbered	Same as above but does not use IP addresses in the core IRB interfaces	SROS, Nuage, Cisco Nexus	Yes
+EVPN L3 Models:
+
+| Model | | | Value | Industry Support | SR Linux Support |
+| --- | --- | --- | --- | --- | --- |
+| Asymmetric | | | Basic IRB forwarding | All vendors | Yes |
+| Symmetric | Host Routing with RT2s | | The same RT2 is used to populate FDB, ARP, and route-table (as opposed to RT2 for FDB/ARP, and RT5 for route-table) | Cisco only | No |
+| | Prefix Routing with RT5s | Interface Less (IFL)	| Uses RT5 in a similar way to IPVPN routes | All vendors | Yes |
+| | | Interface-Full (IFF) - numbered | Uses RT5 with recursive resolution to RT2 |	SROS, Juniper MX | Yes |
+| | | Interface-Full (IFF) - unnumbered | Same as above but does not use IP addresses in the core IRB interfaces | SROS, Nuage, Cisco Nexus | Yes |
 
 The standard SR Linux configuration components of L3 services are illustrated below. 
 

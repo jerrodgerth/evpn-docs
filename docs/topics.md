@@ -1,6 +1,10 @@
 # Suggested Topics
 
-### EVPN services:
+!!!note
+	**This was the original brainstorming list of topics within EVPN**
+
+
+#### EVPN services:
 
 * Intro – what problems EVPN is solving
 	* Single protocol for all overlay services – what RFCs, definition of each Route Type 1-5
@@ -16,7 +20,7 @@
 	* Peering considerations and options – iBGP? EBGP? Jorge question.
 	* Complicating with eBGP? New next-hops
 
-### SR LINUX EVPN
+#### SR LINUX EVPN
 
 * L2 EVPN
 	* We offer VXLAN tunneling
@@ -38,7 +42,7 @@
 	* Good default versus optimizations for inter/intra-DC etc. 
 
 
-### Overlay Overview
+#### Overlay Overview
 
 * What and Why do we need them?
 * Layer 2 vs Layer 3 
@@ -50,7 +54,7 @@
 * Loop Prevention
 
 
-### Overlay and underlay separation
+#### Overlay and underlay separation
 
 * EVPN overlays with MP-BGP
 * Underlay with IGP (OSPF or ISIS) or BGP
@@ -60,7 +64,7 @@
 	* RFC for hyperscale DC design uses eBGP
 
 
-### RFC 7938 - Use of BGP for Routing in Large-Scale Data Centers
+#### RFC 7938 - Use of BGP for Routing in Large-Scale Data Centers
 
 * Simplicity with ISIS for autodiscovery already possible 
 * No need to learn something else 
@@ -74,7 +78,7 @@
 * BFD for BGP for sure, ask bruce about BFD for IGP. 
 
 
-### Control Plane BGP peering options
+#### Control Plane BGP peering options
  
 * eBGP or iBGP
 	* typically iBGP – with router reflectors

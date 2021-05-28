@@ -8,15 +8,17 @@ site_description: >-
 # page tree
 nav:
   - Intro: index.md
-  - Overview: evpn-overview.md
-  - Benefits: evpn-benefits.md
-  - Data Planes: evpn-dataplanes.md
-  - L2 Service: evpn-l2service.md
-  - L3 Service: evpn-l3service.md
-  - Symmetric Routing: evpn-l3symmetric.md
-  - Asymmetric Routing: evpn-l3asymmetric.md
-  - Use Cases: evpn-usecases.md
-  - Topic List: evpn-topics.md
+  - Overview: overview.md
+  - Benefits: benefits.md
+  - Data Planes: dataplanes.md
+  - L2 EVPN: 
+      - L2 Service: l2-evpn/l2-service.md
+  - L3 EVPN: 
+      - L3 Service: l3-evpn/l3-service.md
+      - Symmetric Routing: l3-evpn/symmetric.md
+      - Asymmetric Routing: l3-evpn/asymmetric.md
+  - Use Cases: use-cases.md
+  - Topic List: topics.md
 
 # Repository
 repo_name: jerrodgerth/evpn-docs

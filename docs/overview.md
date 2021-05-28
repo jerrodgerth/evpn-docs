@@ -14,16 +14,15 @@ Using control plane learning provides a consistent signaled FDB in any size netw
 MP-BGP advertises MACs and IPs for next hop resolution with an EVPN NLRI, which fully supports IPv4 and IPv6 in the control and data plane.
 Yes that’s right, there are no extensions to EVPN for IPv6, it’s completely integrated and supported just like IPv4 from the very beginning.
 
-For reference, here are the BGP route types defined for EVPN, and their uses. 
+For reference, here are the BGP route types defined for EVPN, and their uses:
 
-TABLE
-Route Type	Description	RFC	Use
-1	Ethernet auto-discovery route	RFC 7432	Advertises list of EVPN Instances (EVIs) per Ethernet segment (ES)
-2	MAC/IP advertisement route	RFC 7432	Advertises MACs, reachability, and IP/MAC bindings
-3	Inclusive multicast route	RFC 7432	Advertises per VLAN and per ESI tunnel endpoint discovery for BUM traffic
-4	Ethernet segment route	RFC 7432	Redundancy group discovery and designated forwarder (DF) election
-5	IP prefix route	Draft-ietf-bess-evpn-prefix-advertisement-11	Advertises IP prefixes
-
+| Route Type | Description | RFC | Use |
+| --- | --- | --- | --- |
+| 1 | Ethernet auto-discovery route	| RFC 7432 | Advertises list of EVPN Instances (EVIs) per Ethernet segment (ES) |
+| 2 | MAC/IP advertisement route | RFC 7432 | Advertises MACs, reachability, and IP/MAC bindings |
+| 3 | Inclusive multicast route | RFC 7432 | Advertises per VLAN and per ESI tunnel endpoint discovery for BUM traffic |
+| 4 | Ethernet segment route | RFC 7432 | Redundancy group discovery and designated forwarder (DF) election |
+| 5 | IP prefix route | Draft-ietf-bess-evpn-prefix-advertisement-11 | Advertises IP prefixes
 
 Within EVPN, the separation of the control plane and data plane is key to providing flexibility, control, and efficiency in the network.
 
@@ -37,7 +36,7 @@ The choice between these may be based on the operator’s preference, operations
 Both options support very large fabrics, high scale MAC/IP advertisements, tuning options for fast convergence, and similar troubleshooting options.
 For Nokia, SR Linux supports both models, with the following operational considerations identified for operators to make their choice.
 
-#### eBGP:
+#### eBGP
 
 * Configuration of an AS per overlay terminating node, and per spine switch
 * AS reuse possible per overlay terminating node (or pair) 

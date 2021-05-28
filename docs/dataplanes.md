@@ -31,5 +31,5 @@ The main pieces of information encoded in this encapsulation are:
 * Includes the VNI field (24-bit value) or VXLAN network identifier.
 It identifies an isolated Layer 2 domain within the DC network. 
 * The rest of the fields are reserved for future use. 
-FIGURE
 
+FIGURE
