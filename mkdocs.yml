@@ -23,7 +23,7 @@ nav:
 # Repository
 repo_name: jerrodgerth/evpn-docs
 repo_url: https://github.com/jerrodgerth/evpn-docs
-edit_uri: "edit/master/docs/"
+edit_uri: "blob/master/docs/"
 
 # configuration
 theme:
